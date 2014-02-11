@@ -1,20 +1,20 @@
-oink_unity3d
+Oink Unity3D SDK
 ============
 
 Oink Unity3d plugin
 
 # Installation
 
-## Step 1:
+**Step 1:**
 Download and Import Virtual Piggy Plugin Unity Package
 
-## Step 2:
+**Step 2:**
 Enter Merchant Identifier, API Key and Environment in settings by accessing Virtual Piggy Project Settings Window (Virtual Piggy > Project Settings)
 
-## Step 3:
+**Step 3:**
 Bring in VirtualPiggyEventListener, VirtualPiggyManager and VirtualPiggyGUI prefabs into Scene
 
-## Step 4:
+**Step 4:**
 Build for Web and upload it to your server.
 
 # Usage
