@@ -1,0 +1,194 @@
+\hypertarget{class_virtual_piggy}{\section{Virtual\-Piggy Class Reference}
+\label{class_virtual_piggy}\index{Virtual\-Piggy@{Virtual\-Piggy}}
+}
+
+
+Virtual Piggy A\-P\-I  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_virtual_piggy_1_1_login_response}{Login\-Response}
+\begin{DoxyCompactList}\small\item\em Login response object \end{DoxyCompactList}\item 
+class \hyperlink{class_virtual_piggy_1_1_s_o_a_p_request}{S\-O\-A\-P\-Request}
+\begin{DoxyCompactList}\small\item\em Stores S\-O\-A\-P Request data. \end{DoxyCompactList}\item 
+class \hyperlink{class_virtual_piggy_1_1_transaction_response}{Transaction\-Response}
+\begin{DoxyCompactList}\small\item\em Transaction response object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_virtual_piggy_adca55d9dcf3fd7482dacac0ec3258afd}{R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E} \{ {\bfseries A\-U\-T\-H\-E\-N\-T\-I\-C\-A\-T\-E\-\_\-\-U\-S\-E\-R}, 
+{\bfseries A\-U\-T\-H\-E\-N\-T\-I\-C\-A\-T\-E\-\_\-\-C\-H\-I\-L\-D}, 
+{\bfseries T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of Request being made to Virtual Piggy backend \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_virtual_piggy_a9d88b45c735cc1d66f5b1b040d6f06f2}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialize Virtual Piggy A\-P\-I \end{DoxyCompactList}\item 
+static void \hyperlink{class_virtual_piggy_ac6801551dbc6b114cf51c40b9f38703d}{Logout} ()
+\begin{DoxyCompactList}\small\item\em Log user out of Virtual Piggy \end{DoxyCompactList}\item 
+\hypertarget{class_virtual_piggy_a6848953790e21496550c6d6d0a34c4e4}{static void {\bfseries Login} (Action$<$ \hyperlink{class_virtual_piggy_1_1_login_response}{Login\-Response} $>$ success, Action$<$ string $>$ fail)}\label{class_virtual_piggy_a6848953790e21496550c6d6d0a34c4e4}
+
+\item 
+static void \hyperlink{class_virtual_piggy_a5af0f57e5b47349aa2130ff7930d2d17}{Authenticate\-User} (string user\-Name, string password)
+\begin{DoxyCompactList}\small\item\em Authenticates the user. \end{DoxyCompactList}\item 
+static void \hyperlink{class_virtual_piggy_a3db7e0e95d00378043520e4c83b17fd8}{Authenticate\-Child} (string user\-Name, string password)
+\begin{DoxyCompactList}\small\item\em Authenticates the child. \end{DoxyCompactList}\item 
+static void \hyperlink{class_virtual_piggy_ab40b96be4aaf8a8f20d97293b1bdda7d}{Process\-Transaction} (string product\-Name, float price, int quantity, string product\-Description, bool prompt\-For\-Purchase=false)
+\begin{DoxyCompactList}\small\item\em Processes a transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_virtual_piggy_a1dbe43b28ff22f55ee3be3b6eb54def1}{Merchant\-I\-D}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Merchant Identifier accessor \end{DoxyCompactList}\item 
+static string \hyperlink{class_virtual_piggy_a01aab4ab653d5d9ca572d28ff5d63aa8}{A\-P\-I\-Key}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A\-P\-I Key accessor \end{DoxyCompactList}\item 
+static string \hyperlink{class_virtual_piggy_a27549028a152d40ddf293705da935a9b}{Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current logged in user's token \end{DoxyCompactList}\item 
+static bool \hyperlink{class_virtual_piggy_af0ab9dea29cfb35855cd75d80a652900}{Is\-Logged\-In}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance is logged in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Virtual Piggy A\-P\-I 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_virtual_piggy_adca55d9dcf3fd7482dacac0ec3258afd}{\index{Virtual\-Piggy@{Virtual\-Piggy}!R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E@{R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E}}
+\index{R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E@{R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Virtual\-Piggy.\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-T\-Y\-P\-E}}}\label{class_virtual_piggy_adca55d9dcf3fd7482dacac0ec3258afd}
+
+
+Type of Request being made to Virtual Piggy backend 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_virtual_piggy_a3db7e0e95d00378043520e4c83b17fd8}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Authenticate\-Child@{Authenticate\-Child}}
+\index{Authenticate\-Child@{Authenticate\-Child}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Authenticate\-Child}]{\setlength{\rightskip}{0pt plus 5cm}static void Virtual\-Piggy.\-Authenticate\-Child (
+\begin{DoxyParamCaption}
+\item[{string}]{user\-Name, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_virtual_piggy_a3db7e0e95d00378043520e4c83b17fd8}
+
+
+Authenticates the child. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\-Name} & User name. \\
+\hline
+{\em password} & Password. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_virtual_piggy_a5af0f57e5b47349aa2130ff7930d2d17}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Authenticate\-User@{Authenticate\-User}}
+\index{Authenticate\-User@{Authenticate\-User}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Authenticate\-User}]{\setlength{\rightskip}{0pt plus 5cm}static void Virtual\-Piggy.\-Authenticate\-User (
+\begin{DoxyParamCaption}
+\item[{string}]{user\-Name, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_virtual_piggy_a5af0f57e5b47349aa2130ff7930d2d17}
+
+
+Authenticates the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\-Name} & User name. \\
+\hline
+{\em password} & Password. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_virtual_piggy_a9d88b45c735cc1d66f5b1b040d6f06f2}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}static void Virtual\-Piggy.\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_virtual_piggy_a9d88b45c735cc1d66f5b1b040d6f06f2}
+
+
+Initialize Virtual Piggy A\-P\-I 
+
+\hypertarget{class_virtual_piggy_ac6801551dbc6b114cf51c40b9f38703d}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Logout@{Logout}}
+\index{Logout@{Logout}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Logout}]{\setlength{\rightskip}{0pt plus 5cm}static void Virtual\-Piggy.\-Logout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_virtual_piggy_ac6801551dbc6b114cf51c40b9f38703d}
+
+
+Log user out of Virtual Piggy 
+
+\hypertarget{class_virtual_piggy_ab40b96be4aaf8a8f20d97293b1bdda7d}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Process\-Transaction@{Process\-Transaction}}
+\index{Process\-Transaction@{Process\-Transaction}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Process\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}static void Virtual\-Piggy.\-Process\-Transaction (
+\begin{DoxyParamCaption}
+\item[{string}]{product\-Name, }
+\item[{float}]{price, }
+\item[{int}]{quantity, }
+\item[{string}]{product\-Description, }
+\item[{bool}]{prompt\-For\-Purchase = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_virtual_piggy_ab40b96be4aaf8a8f20d97293b1bdda7d}
+
+
+Processes a transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\-Name} & Product name. \\
+\hline
+{\em price} & Price. \\
+\hline
+{\em quantity} & Quantity. \\
+\hline
+{\em product\-Description} & Product description. \\
+\hline
+{\em prompt\-For\-Purchase} & Prompt user for purchase. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_virtual_piggy_a01aab4ab653d5d9ca572d28ff5d63aa8}{\index{Virtual\-Piggy@{Virtual\-Piggy}!A\-P\-I\-Key@{A\-P\-I\-Key}}
+\index{A\-P\-I\-Key@{A\-P\-I\-Key}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{A\-P\-I\-Key}]{\setlength{\rightskip}{0pt plus 5cm}string Virtual\-Piggy.\-A\-P\-I\-Key\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}}\label{class_virtual_piggy_a01aab4ab653d5d9ca572d28ff5d63aa8}
+
+
+A\-P\-I Key accessor 
+
+\hypertarget{class_virtual_piggy_af0ab9dea29cfb35855cd75d80a652900}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Is\-Logged\-In@{Is\-Logged\-In}}
+\index{Is\-Logged\-In@{Is\-Logged\-In}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Is\-Logged\-In}]{\setlength{\rightskip}{0pt plus 5cm}bool Virtual\-Piggy.\-Is\-Logged\-In\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_virtual_piggy_af0ab9dea29cfb35855cd75d80a652900}
+
+
+Gets a value indicating whether this instance is logged in. 
+
+{\ttfamily true} if this instance is logged in; otherwise, {\ttfamily false}. \hypertarget{class_virtual_piggy_a1dbe43b28ff22f55ee3be3b6eb54def1}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Merchant\-I\-D@{Merchant\-I\-D}}
+\index{Merchant\-I\-D@{Merchant\-I\-D}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Merchant\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}string Virtual\-Piggy.\-Merchant\-I\-D\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}}\label{class_virtual_piggy_a1dbe43b28ff22f55ee3be3b6eb54def1}
+
+
+Merchant Identifier accessor 
+
+\hypertarget{class_virtual_piggy_a27549028a152d40ddf293705da935a9b}{\index{Virtual\-Piggy@{Virtual\-Piggy}!Token@{Token}}
+\index{Token@{Token}!VirtualPiggy@{Virtual\-Piggy}}
+\subsubsection[{Token}]{\setlength{\rightskip}{0pt plus 5cm}string Virtual\-Piggy.\-Token\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}}\label{class_virtual_piggy_a27549028a152d40ddf293705da935a9b}
+
+
+Current logged in user's token 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-C\-P\-X-\/\-Hackintosh01/\-Virtual Piggy Plugin/\-Assets/\-Plugins/\-Virtual\-Piggy/Virtual\-Piggy.\-cs\end{DoxyCompactItemize}

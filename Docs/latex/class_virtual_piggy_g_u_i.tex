@@ -1,0 +1,166 @@
+\hypertarget{class_virtual_piggy_g_u_i}{\section{Virtual\-Piggy\-G\-U\-I Class Reference}
+\label{class_virtual_piggy_g_u_i}\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}}
+}
+
+
+This class is responsible for rendering the Virtual Piggy Login/\-Transaction Dialog  
+
+
+Inheritance diagram for Virtual\-Piggy\-G\-U\-I\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_virtual_piggy_g_u_i}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_virtual_piggy_g_u_i_acfc203ccd9a2018fb6c1e53ebe244c8d}{S\-T\-A\-T\-E} \{ \\*
+{\bfseries L\-O\-G\-I\-N}, 
+{\bfseries A\-U\-T\-H\-E\-N\-T\-I\-C\-A\-T\-I\-N\-G}, 
+{\bfseries T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N\-\_\-\-A\-S\-K}, 
+{\bfseries T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N\-\_\-\-I\-N\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S}, 
+\\*
+{\bfseries T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}, 
+{\bfseries T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}, 
+{\bfseries N\-O\-N\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em States of G\-U\-I \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_virtual_piggy_g_u_i_a0c3dfdd1f04f8c54aae45eb6e9dacbb6}{Prompt\-For\-Purchase} (string product\-Name, float price, int quantity, string product\-Description)
+\begin{DoxyCompactList}\small\item\em Prompt the user before performing Transaction \end{DoxyCompactList}\item 
+void \hyperlink{class_virtual_piggy_g_u_i_a8120fba4e910a063603d0acccc4d618d}{Show\-Transaction\-Progress} ()
+\begin{DoxyCompactList}\small\item\em Shows the transaction progress. \end{DoxyCompactList}\item 
+void \hyperlink{class_virtual_piggy_g_u_i_ae0fe2ccfef48ccfbcfa3861418081046}{Login\-Dialog} (Action$<$ \hyperlink{class_virtual_piggy_1_1_login_response}{Virtual\-Piggy.\-Login\-Response} $>$ success\-Callback, Action$<$ string $>$ fail\-Callback)
+\begin{DoxyCompactList}\small\item\em Display login dialog to user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\-U\-I\-Skin \hyperlink{class_virtual_piggy_g_u_i_a6d7bdaef0dd72024639f51008c202130}{gui\-Skin}
+\begin{DoxyCompactList}\small\item\em The G\-U\-I skin that will be used for G\-U\-I \end{DoxyCompactList}\item 
+Animation \hyperlink{class_virtual_piggy_g_u_i_a0fcb59d1bf578d056d0bc123a89e75f0}{bounce\-In\-Animation}
+\begin{DoxyCompactList}\small\item\em Animation that is used for the login Dialog \end{DoxyCompactList}\item 
+float \hyperlink{class_virtual_piggy_g_u_i_acef2dc6ac83a1dd3b72796fcce046934}{gui\-Scale} = 1.\-0f
+\begin{DoxyCompactList}\small\item\em Scale of G\-U\-I \end{DoxyCompactList}\item 
+float \hyperlink{class_virtual_piggy_g_u_i_adb759917612421d1475ba86a7d6dc056}{animation\-Scale} = 1.\-0f
+\begin{DoxyCompactList}\small\item\em scale used in login animation, hidden in inspector \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_virtual_piggy_g_u_i_a7464dcd32b13809bf7893ce3ad858bdf}{loading\-Indicator\-Texture\-Coordinates}
+\begin{DoxyCompactList}\small\item\em The loading indicator texture coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is responsible for rendering the Virtual Piggy Login/\-Transaction Dialog 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_virtual_piggy_g_u_i_acfc203ccd9a2018fb6c1e53ebe244c8d}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!S\-T\-A\-T\-E@{S\-T\-A\-T\-E}}
+\index{S\-T\-A\-T\-E@{S\-T\-A\-T\-E}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Virtual\-Piggy\-G\-U\-I.\-S\-T\-A\-T\-E}}}\label{class_virtual_piggy_g_u_i_acfc203ccd9a2018fb6c1e53ebe244c8d}
+
+
+States of G\-U\-I 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_virtual_piggy_g_u_i_ae0fe2ccfef48ccfbcfa3861418081046}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!Login\-Dialog@{Login\-Dialog}}
+\index{Login\-Dialog@{Login\-Dialog}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{Login\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void Virtual\-Piggy\-G\-U\-I.\-Login\-Dialog (
+\begin{DoxyParamCaption}
+\item[{Action$<$ {\bf Virtual\-Piggy.\-Login\-Response} $>$}]{success\-Callback, }
+\item[{Action$<$ string $>$}]{fail\-Callback}
+\end{DoxyParamCaption}
+)}}\label{class_virtual_piggy_g_u_i_ae0fe2ccfef48ccfbcfa3861418081046}
+
+
+Display login dialog to user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em success\-Callback} & Success callback. \\
+\hline
+{\em fail\-Callback} & Fail callback. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_virtual_piggy_g_u_i_a0c3dfdd1f04f8c54aae45eb6e9dacbb6}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!Prompt\-For\-Purchase@{Prompt\-For\-Purchase}}
+\index{Prompt\-For\-Purchase@{Prompt\-For\-Purchase}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{Prompt\-For\-Purchase}]{\setlength{\rightskip}{0pt plus 5cm}void Virtual\-Piggy\-G\-U\-I.\-Prompt\-For\-Purchase (
+\begin{DoxyParamCaption}
+\item[{string}]{product\-Name, }
+\item[{float}]{price, }
+\item[{int}]{quantity, }
+\item[{string}]{product\-Description}
+\end{DoxyParamCaption}
+)}}\label{class_virtual_piggy_g_u_i_a0c3dfdd1f04f8c54aae45eb6e9dacbb6}
+
+
+Prompt the user before performing Transaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\-Name} & Product name. \\
+\hline
+{\em price} & Price. \\
+\hline
+{\em quantity} & Quantity. \\
+\hline
+{\em product\-Description} & Product description. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_virtual_piggy_g_u_i_a8120fba4e910a063603d0acccc4d618d}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!Show\-Transaction\-Progress@{Show\-Transaction\-Progress}}
+\index{Show\-Transaction\-Progress@{Show\-Transaction\-Progress}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{Show\-Transaction\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}void Virtual\-Piggy\-G\-U\-I.\-Show\-Transaction\-Progress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_virtual_piggy_g_u_i_a8120fba4e910a063603d0acccc4d618d}
+
+
+Shows the transaction progress. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_virtual_piggy_g_u_i_adb759917612421d1475ba86a7d6dc056}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!animation\-Scale@{animation\-Scale}}
+\index{animation\-Scale@{animation\-Scale}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{animation\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}float Virtual\-Piggy\-G\-U\-I.\-animation\-Scale = 1.\-0f}}\label{class_virtual_piggy_g_u_i_adb759917612421d1475ba86a7d6dc056}
+
+
+scale used in login animation, hidden in inspector 
+
+\hypertarget{class_virtual_piggy_g_u_i_a0fcb59d1bf578d056d0bc123a89e75f0}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!bounce\-In\-Animation@{bounce\-In\-Animation}}
+\index{bounce\-In\-Animation@{bounce\-In\-Animation}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{bounce\-In\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}Animation Virtual\-Piggy\-G\-U\-I.\-bounce\-In\-Animation}}\label{class_virtual_piggy_g_u_i_a0fcb59d1bf578d056d0bc123a89e75f0}
+
+
+Animation that is used for the login Dialog 
+
+\hypertarget{class_virtual_piggy_g_u_i_acef2dc6ac83a1dd3b72796fcce046934}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!gui\-Scale@{gui\-Scale}}
+\index{gui\-Scale@{gui\-Scale}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{gui\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}float Virtual\-Piggy\-G\-U\-I.\-gui\-Scale = 1.\-0f}}\label{class_virtual_piggy_g_u_i_acef2dc6ac83a1dd3b72796fcce046934}
+
+
+Scale of G\-U\-I 
+
+\hypertarget{class_virtual_piggy_g_u_i_a6d7bdaef0dd72024639f51008c202130}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!gui\-Skin@{gui\-Skin}}
+\index{gui\-Skin@{gui\-Skin}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{gui\-Skin}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-Skin Virtual\-Piggy\-G\-U\-I.\-gui\-Skin}}\label{class_virtual_piggy_g_u_i_a6d7bdaef0dd72024639f51008c202130}
+
+
+The G\-U\-I skin that will be used for G\-U\-I 
+
+\hypertarget{class_virtual_piggy_g_u_i_a7464dcd32b13809bf7893ce3ad858bdf}{\index{Virtual\-Piggy\-G\-U\-I@{Virtual\-Piggy\-G\-U\-I}!loading\-Indicator\-Texture\-Coordinates@{loading\-Indicator\-Texture\-Coordinates}}
+\index{loading\-Indicator\-Texture\-Coordinates@{loading\-Indicator\-Texture\-Coordinates}!VirtualPiggyGUI@{Virtual\-Piggy\-G\-U\-I}}
+\subsubsection[{loading\-Indicator\-Texture\-Coordinates}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 Virtual\-Piggy\-G\-U\-I.\-loading\-Indicator\-Texture\-Coordinates}}\label{class_virtual_piggy_g_u_i_a7464dcd32b13809bf7893ce3ad858bdf}
+
+
+The loading indicator texture coordinates. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-C\-P\-X-\/\-Hackintosh01/\-Virtual Piggy Plugin/\-Assets/\-Plugins/\-Virtual\-Piggy/Virtual\-Piggy\-G\-U\-I.\-cs\end{DoxyCompactItemize}
